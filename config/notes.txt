@@ -1,0 +1,7 @@
+Concurrently maybe can be a -D dependency
+
+
+npm install bcryptjs express express-validator mongoose
+npm install -D concurrently nodemon
+
+npx create-react-app client
