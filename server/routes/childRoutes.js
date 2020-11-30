@@ -33,4 +33,23 @@ router.get(
   })
 )
 
+// @desc    Fetch single child
+// @route   GET /api/child/:id/:secret
+// @access  Public
+router.get(
+  '/:id/:secret',
+  asyncHandler(async (req, res) => {
+    const child = await Child.findOne({
+      _id: req.params.id,
+      secret: req.params.secret,
+    })
+
+    if (child) {
+      res.json(child)
+    } else {
+      res.status(404)
+      throw new Error('Child not found')
+    }
+  })
+)
 export default router

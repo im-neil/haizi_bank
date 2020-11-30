@@ -12,6 +12,8 @@ const app = express()
 
 app.get('/', (req, res) => res.send('API Running'))
 
+app.get('/api', (req, res) => res.send([{ name: 'Api running' }]))
+
 app.use('/api/child', childRoutes)
 app.use('/api/parent', parentRoutes)
 

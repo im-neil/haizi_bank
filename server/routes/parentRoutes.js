@@ -12,8 +12,8 @@ router.get(
   asyncHandler(async (req, res) => {
     const children = await Child.find({ parent: req.params.id })
 
-    if (child) {
-      res.json(child)
+    if (children) {
+      res.json(children)
     } else {
       res.status(404)
       throw new Error('No children found')

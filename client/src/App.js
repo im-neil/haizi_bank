@@ -1,11 +1,16 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useParams,
+} from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Landing from './screens/Landing'
 import Dashboard from './screens/Dashboard'
-import ChildView from './screens/ChildView'
+import Peek from './screens/Peek'
 import NotFound from './screens/NotFound'
 
 const App = () => {
@@ -18,12 +23,14 @@ const App = () => {
 
         <Route exact path='/dashboard' component={Dashboard} />
 
-        <Route path='/account/:id'>
+        <Route path='/account/'>
           <Container>
-            <ChildView />
+            <Peek />
             <Footer />
           </Container>
         </Route>
+
+        <Route path='/peek/:id/:secret' component={Peek} />
 
         <Route>
           <Container>

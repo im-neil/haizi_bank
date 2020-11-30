@@ -14,7 +14,7 @@ let today = new Date()
 
 const children = [
   {
-    name: 'Frodo',
+    name: 'Frodo Bagginses',
     recentDeposits: [
       {
         action: '+ $5.00 Allowance',
@@ -53,18 +53,18 @@ const children = [
       },
       {
         name: 'Savings',
-        balance: 47.23,
+        balance: 5.32,
         percentage: 5,
       },
       {
         name: 'Charity',
-        balance: 47.23,
+        balance: 8.45,
         percentage: 10,
       },
     ],
   },
   {
-    name: 'Arwen',
+    name: 'Arwen the Elf',
     recentDeposits: [
       {
         action: '+ $1.50 Allowance',
@@ -113,7 +113,7 @@ const children = [
     ],
   },
   {
-    name: 'Samwise',
+    name: 'Samwise Gamer',
     recentDeposits: [
       {
         action: '+ $0.01 found a penny',
@@ -143,7 +143,6 @@ const children = [
       },
     ],
     secret: '4uTe2H72YnezKhdcgNnTsEPet652BxQ5',
-    avatar: 'frodo.png',
     funds: [
       {
         name: 'Spending',
@@ -163,7 +162,7 @@ const children = [
     ],
   },
   {
-    name: 'Frodo',
+    name: 'Frodo Bagginses',
     recentDeposits: [
       {
         action: '+ $5.00 Allowance',
@@ -202,18 +201,18 @@ const children = [
       },
       {
         name: 'Savings',
-        balance: 47.23,
+        balance: 5.32,
         percentage: 5,
       },
       {
         name: 'Charity',
-        balance: 47.23,
+        balance: 8.45,
         percentage: 10,
       },
     ],
   },
   {
-    name: 'Arwen',
+    name: 'Arwen the Elf',
     recentDeposits: [
       {
         action: '+ $1.50 Allowance',
